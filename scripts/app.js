@@ -97,7 +97,7 @@ function coolDown() {
     plus.innerText = "Sun!";
     count1 = 0;
     counter1.innerText = count1 + " / 15";
-    }, 5000);
+    }, 10000);
 }
 
 function coolDown2() {
@@ -108,7 +108,7 @@ function coolDown2() {
     plus2.innerText = "Water!";
     count2 = 0;
     counter2.innerText = count2 + " / 10";
-    }, 10000);
+    }, 15000);
 }
 
 function coolDown3() {
@@ -119,5 +119,5 @@ function coolDown3() {
       plus3.innerText = "Water!";
       count3 = 0;
       counter3.innerText = count3 + " / 5";
-      }, 15000);
+      }, 20000);
   }
