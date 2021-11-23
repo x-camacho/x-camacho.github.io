@@ -1,0 +1,95 @@
+h1 {
+    color: red;
+    text-align: center;
+    padding: 2rem;
+}
+
+h3 {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+h4 {
+    text-align: center;
+    padding: 1rem;
+}
+
+div#value {
+    display: block;
+    z-index: 2;
+    height: 20px;
+    background-color: rgb(240, 237, 86);
+    left: 0;
+    text-align: center;
+}
+
+.feedContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ body {
+    background-color: rgb(160, 226, 247);
+
+}
+
+.feedButton {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.feedButton:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+   
+@media all and (max-width:30em){
+
+    .feedButton{
+    display: block;
+    margin: 0.4em auto;
+    }
+}
+
+.round-time-bar {
+    margin: 1rem;
+    overflow: hidden;
+  }
+  .round-time-bar div {
+    height: 5px;
+    animation: roundtime calc(var(--duration) * 1s) steps(var(--duration))
+      forwards;
+    transform-origin: left center;
+    background: linear-gradient(to bottom, red, #900);
+  }
+  
+  .round-time-bar[data-style="smooth"] div {
+    animation: roundtime calc(var(--duration) * 1s) linear forwards;
+  }
+  
+  .round-time-bar[data-style="fixed"] div {
+    width: calc(var(--duration) * 5%);
+  }
+  
+  .round-time-bar[data-color="blue"] div {
+    background: linear-gradient(to bottom, #64b5f6, #1565c0);
+  }
+  
+  @keyframes roundtime {
+    to {
+      /* More performant than `width` */
+      transform: scaleX(0);
+    }
+  }
+  

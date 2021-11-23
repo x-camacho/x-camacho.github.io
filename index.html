@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer src="./scripts/app.js"> </script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="level">Level: 1</h1>
+    </div>
+        <div class="happinessContainer" 
+            div id="value" data-value="0" style="width: 0%">
+    </div>
+        <h3>Happiness Meter: <span id="xpPercent">0%</span></h3>
+    </div>
+    <div class="round-time-bar" data-style="smooth" style="--duration: 120;">
+        <div></div>
+        <!-- <button id="restart-button">restart timers</button> -->
+      </div>
+    <div class="feedContainer">
+        <div class="feedBox1">
+            <h4 id="counter1">0 / 15</h4>
+            <button class="feedButton1" id="plus">Sun!</button>
+        </div>
+        <div class="feedBox2">
+            <h4 id="counter2">0 / 10</h4>
+            <button class="feedButton2" id="plus2">Water!</button>
+        </div>
+        <div class="feedBox3">
+            <h4 id="counter3">0 / 5</h4>
+            <button class="feedButton3" id="plus3">Love!</button>
+        </div>
+    </div>
+</body>
+</html>
+
