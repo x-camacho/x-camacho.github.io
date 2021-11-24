@@ -14,10 +14,17 @@ h4 {
     padding: 1rem;
 }
 
+div#value2 {
+  display: inline-block;
+  height:40px;
+  background-color: rgb(252, 252, 251);
+  margin: 0px 0px 0px 0px;
+}
+
 div#value {
     display: block;
     z-index: 2;
-    height: 20px;
+    height:40px;
     background-color: rgb(240, 237, 86);
     left: 0;
     text-align: center;

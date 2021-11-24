@@ -116,8 +116,10 @@ function coolDown3() {
     plus3.innerText = "On Cooldown";
     setTimeout( ()=>{
       plus3.disabled = false;
-      plus3.innerText = "Water!";
+      plus3.innerText = "Love!";
       count3 = 0;
       counter3.innerText = count3 + " / 5";
       }, 20000);
   }
+
+  
