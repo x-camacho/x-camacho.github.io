@@ -9,6 +9,15 @@ let counter3 = document.getElementById("counter3");
 let count1 = 0;
 let count2 = 0;
 let count3 = 0;
+//////* END */////
+
+//////* GRAB USER NAME FROM URL, STORE AND PUSH TO GAME PAGE */////
+let userName = [];
+location.search.substr(1).split("&").forEach(function(item) {userName[item.split("=")[0]] = item.split("=")[1]});
+console.log(userName)
+document.getElementById('plantName1').innerText = userName.plantName;
+//////* END */////
+
 
 document.getElementById("plus").addEventListener("click", function() {
     let newValue = parseInt(progress.getAttribute('data-value')) + 1;
@@ -87,6 +96,7 @@ button.addEventListener("click", () => {
     bar.classList.add("round-time-bar");
   });
 });
+//////* END */////
 
 //////* DISABLE BUTTON && INITIALIZE COOLDOWN*//////
 function coolDown() {
@@ -121,5 +131,5 @@ function coolDown3() {
       counter3.innerText = count3 + " / 5";
       }, 20000);
   }
-
+//////* END */////
   
