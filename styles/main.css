@@ -1,19 +1,20 @@
+body {
+  width: auto;
+  height: auto;
+  background-color: rgb(160, 226, 247);
+}
+
 h1 {
     color: red;
     text-align: center;
-    padding: 2rem;
-    margin: 5rem;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 h2 {
   text-align: center;
   padding: 3rem;
   margin: 10rem;
-}
-
-form {
-  display: flex;
-  justify-content: center;
 }
 
 h3 {
@@ -26,13 +27,18 @@ h4 {
     padding: 1rem;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+}
+
 .flowerPosition  {
   display: flex;
   justify-content: center;
 }
 
 #plantName1 {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   font-size: 35px;
@@ -44,15 +50,16 @@ h4 {
   margin: 2rem;
   border-color: white;
   border-style: solid;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  height: 177px;
 }
 
 .bars {
   border-color: white;
   border-style: solid;
   padding: 2rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 div#value3 {
@@ -86,84 +93,47 @@ div#value {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
- body {
-    background-color: rgb(160, 226, 247);
-
-}
-
-.feedButton {
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border:0.1em solid #FFFFFF;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#FFFFFF;
-    text-align:center;
-    transition: all 0.2s;
-}
-
-.feedButton:hover{
-    color:#000000;
-    background-color:#FFFFFF;
-}
-   
-@media all and (max-width:30em){
-
-    .feedButton{
-    display: block;
-    margin: 0.4em auto;
-    }
-}
-
-.round-time-bar {
     margin: 1rem;
-    overflow: hidden;
-  }
-  .round-time-bar div {
-    height: 5px;
-    animation: roundtime calc(var(--duration) * 1s) steps(var(--duration))
-      forwards;
-    transform-origin: left center;
-    background: linear-gradient(to bottom, red, #900);
-  }
-  
-  .round-time-bar[data-style="smooth"] div {
-    animation: roundtime calc(var(--duration) * 1s) linear forwards;
-  }
-  
-  .round-time-bar[data-style="fixed"] div {
-    width: calc(var(--duration) * 5%);
-  }
-  
-  .round-time-bar[data-color="blue"] div {
-    background: linear-gradient(to bottom, #64b5f6, #1565c0);
-  }
-  
-  @keyframes roundtime {
-    to {
-      /* More performant than `width` */
-      transform: scaleX(0);
-    }
-  }
-
-  p {
-    text-align: center;
-
-  }
-
-  #button {
-    text-align: center;
 }
 
-  .redirect {
+p {
+  text-align: center;
+
+}
+
+#plus.nes-btn.is-warning, #plus2.nes-btn.is-primary, #plus3.nes-btn.is-error {
+  width: 200px;
+}
+
+.redirect {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+  padding: 1rem;
+
+}
+
+/* OPTIMIZATION FOR OTHER DEVICES */
+
+/* for laptops */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* for iPhones */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* for iPad */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
 }

@@ -85,25 +85,25 @@ function reset() {
 
 //////* DISABLE BUTTON && INITIALIZE COOLDOWN*//////
 function coolDown() {
-  plus.disabled = true;
-  plus.innerText = "On Cooldown";
-  setTimeout( ()=>{
-    plus.disabled = false;
-    plus.innerText = "Sun!";
-    count1 = 0;
-    counter1.innerText = count1 + " / 15";
-    }, 10000);
+    plus.disabled = true;
+    plus.innerText = "On Cooldown";
+    setTimeout( ()=>{
+        plus.disabled = false;
+        plus.innerText = "Sun!";
+        count1 = 0;
+        counter1.innerText = count1 + " / 15";
+        }, 10000);
 }
 
 function coolDown2() {
-  plus2.disabled = true;
-  plus2.innerText = "On Cooldown";
-  setTimeout( ()=>{
-    plus2.disabled = false;
-    plus2.innerText = "Water!";
-    count2 = 0;
-    counter2.innerText = count2 + " / 10";
-    }, 15000);
+    plus2.disabled = true;
+    plus2.innerText = "On Cooldown";
+    setTimeout( ()=>{
+        plus2.disabled = false;
+        plus2.innerText = "Water!"; 
+        count2 = 0;
+        counter2.innerText = count2 + " / 10";
+        }, 15000);
 }
 
 function coolDown3() {
@@ -120,7 +120,7 @@ function coolDown3() {
   
 
 ///* Will Meter *///
-let willLeft = 5;
+let willLeft = 15;
 function willtoLive() {
     let interval = setInterval(function() {
     document.getElementById('timer').innerHTML = --willLeft + " seconds";
@@ -130,17 +130,17 @@ function willtoLive() {
         plus3.disabled = true;
        document.getElementById('timer').innerHTML = "Oh, no! " + userName.plantName + " has lost the will to live!" + " Try AGAIN??";
        let a = document.createElement('BUTTON');
-       let a2 = document.createElement('BUTTON');
        let contentYes = document.createTextNode("Yes!");
-       let contentNo = document.createTextNode("No!")
        a.appendChild(contentYes);
-       a2.appendChild(contentNo);
        document.getElementById('continueYes').appendChild(a);
-        document.getElementById('continueNo').appendChild(a2);
-        a.onclick = function () {
+       a.onclick = function () {
             window.location = "name_your_plant.html";
         }
-        a2.onclick = function ()  {
+       let a2 = document.createElement('BUTTON');
+       let contentNo = document.createTextNode("No!")
+       a2.appendChild(contentNo);
+       document.getElementById('continueNo').appendChild(a2);
+       a2.onclick = function () {
             window.location = "welcome.html";
         }
        clearInterval(interval);
