@@ -1,7 +1,24 @@
+.openContainer {
+  display: block;
+  position: relative;
+  border-width: .5rem;
+  padding: 1rem;
+  margin: auto;
+  height: 1000px;
+}
+
+.space1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 body {
   width: auto;
   height: auto;
   background-color: rgb(160, 226, 247);
+  image-rendering: pixelated;
 }
 
 h1 {
@@ -32,6 +49,10 @@ form {
   justify-content: center;
 }
 
+#plantName1 {
+  animation: color-change 1s infinite;
+}
+
 .flowerPosition  {
   display: flex;
   justify-content: center;
@@ -60,6 +81,7 @@ form {
   border-style: solid;
   padding: 2rem;
   margin: 1rem;
+  /* animation: border-color 1s infinite; */
 }
 
 div#value3 {
@@ -112,6 +134,35 @@ p {
   padding: 1rem;
 
 }
+
+/* KEYFRAMES FOR CSS ANIMATION */
+
+/* Animation for Plant Name Text */
+@keyframes color-change { 
+  0% { color: rgb(255, 145, 0); }
+  15% { color: rgb(235, 201, 9); }
+  30% { color: rgb(115, 255, 0); }
+  45% { color: rgb(0, 195, 255); }
+  60% { color: rgb(132, 0, 255); }
+  75% { color: rgb(247, 0, 255); }
+  90% { color: rgb(255, 0, 64); }
+  100% { color: rgb(255, 0, 0); }
+}
+
+@keyframes border-color { 
+  0% { color: rgb(255, 145, 0); }
+  15% { color: rgb(235, 201, 9); }
+  30% { color: rgb(115, 255, 0); }
+  45% { color: rgb(0, 195, 255); }
+  60% { color: rgb(132, 0, 255); }
+  75% { color: rgb(247, 0, 255); }
+  90% { color: rgb(255, 0, 64); }
+  100% { color: rgb(255, 0, 0); }
+}
+
+
+
+
 
 /* OPTIMIZATION FOR OTHER DEVICES */
 
