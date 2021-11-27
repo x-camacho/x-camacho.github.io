@@ -78,7 +78,7 @@ function reset() {
      plus2.innerText = "Water!";
      plus3.disabled = false;
      plus3.innerText = "Love";
-     willLeft += 20;
+     willLeft = 20;
 }
 //////* END BUTTON FUNCTION VARIABLES && MECHANICS END *//////
 
@@ -120,30 +120,33 @@ function coolDown3() {
   
 
 ///* Will Meter *///
+let willLeft = 5;
 function willtoLive() {
-let willLeft = 10;
-let interval = setInterval(function() {
+    let interval = setInterval(function() {
     document.getElementById('timer').innerHTML = --willLeft + " seconds";
     if (willLeft <= 0) {
         plus.disabled = true;
         plus2.disabled = true;
         plus3.disabled = true;
-       document.getElementById('timer').innerHTML = "Oh, no! " + userName.plantName + " has lost the will to live!" + " Continue?";
-       let a = document.createElement('a');
-       let a2 = document.createElement('a');
+       document.getElementById('timer').innerHTML = "Oh, no! " + userName.plantName + " has lost the will to live!" + " Try AGAIN??";
+       let a = document.createElement('BUTTON');
+       let a2 = document.createElement('BUTTON');
        let contentYes = document.createTextNode("Yes!");
        let contentNo = document.createTextNode("No!")
        a.appendChild(contentYes);
        a2.appendChild(contentNo);
-       a.href = "name_your_plant.html";
-        a2.href = "welcome.html";
        document.getElementById('continueYes').appendChild(a);
         document.getElementById('continueNo').appendChild(a2);
+        a.onclick = function () {
+            window.location = "name_your_plant.html";
+        }
+        a2.onclick = function ()  {
+            window.location = "welcome.html";
+        }
        clearInterval(interval);
-    }
-}, 1000);
+        }
+    }, 1000);
 }
 
 willtoLive();
-
-    //    window.alert("Would you like to try again?");
+///* Will Meter END *///
