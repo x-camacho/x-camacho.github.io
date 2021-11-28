@@ -46,6 +46,19 @@
   transform: translate(-50%, -50%);
 }
 
+.levelContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.levelBox {
+  border: solid;
+  animation: color-change 1s infinite;
+}
 
 
 body {
@@ -84,7 +97,7 @@ form {
 }
 
 #plantName1 {
-  animation: color-change 1s infinite;
+  /* animation: color-change 1s infinite; */
 }
 
 .flowerPosition  {
@@ -103,8 +116,6 @@ form {
 .willTimer  {
   text-align: center;
   margin: 2rem;
-  border-color: white;
-  border-style: solid;
   padding: 1rem;
   margin: 1rem;
   height: 177px;
@@ -193,10 +204,6 @@ p {
   90% { color: rgb(255, 0, 64); }
   100% { color: rgb(255, 0, 0); }
 }
-
-
-
-
 
 /* OPTIMIZATION FOR OTHER DEVICES */
 

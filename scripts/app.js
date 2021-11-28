@@ -1,7 +1,25 @@
+
+
+//////* LEVEL UP RANKING SYSTEM */////
+
+let ranks = [
+    levelOne = " ",
+    levelTwo = "Seedling ", 
+    levelThree = "Sapling ", 
+    levelFour = "Budding ", 
+    levelFive = "Blooming ", 
+    levelSix = "Astounding ",
+    levelSeven = "Dynamo ",
+    levelEight = "Legendary ",
+    LevelNine = "God ",
+    LevelTen = "Immortal "
+];
+//////*  LEVEL UP RANKING SYSTEM */////
+
+
 //////* GRAB USER NAME FROM URL, STORE AND PUSH TO GAME PAGE */////
 let userName = [];
 location.search.substr(1).split("&").forEach(function(item) {userName[item.split("=")[0]] = item.split("=")[1]});
-console.log(userName)
 document.getElementById('plantName1').innerText = userName.plantName;
 //////*  END GRAB USER NAME FROM URL, STORE AND PUSH TO GAME PAGE */////
 
@@ -27,8 +45,7 @@ document.getElementById("plus").addEventListener("click", function() {
         counter1.innerText = count1 + " / 15";  //increase counter after every button click //
         afterClick(newValue);
         },
-);
-       
+)     
 document.getElementById("plus2").addEventListener("click", function() {
     let newValue = parseInt(progress.getAttribute('data-value')) + 2;
         count2 += 1;
@@ -37,19 +54,18 @@ document.getElementById("plus2").addEventListener("click", function() {
         }
         counter2.innerText = count2 + " / 10";
         afterClick(newValue);
-        },
-);
-       
+    },
+)      
 document.getElementById("plus3").addEventListener("click", function() {
-    let newValue = parseInt(progress.getAttribute('data-value')) + 5;
-    count3 += 1;
-    if(count3 >= 5) {
-        coolDown3();
+    let newValue = parseInt(progress.getAttribute('data-value')) + 50;
+        count3 += 1;
+        if(count3 >= 5) {
+            coolDown3();
         }
         counter3.innerText = count3 + " / 5";
         afterClick(newValue);
-        },
-);
+    },
+)
         
 function afterClick(newValue) {
     progress.style.width = newValue + '%';
@@ -71,56 +87,67 @@ function reset() {
      count3 = 0;
      counter3.innerText = 0 + " / 5";
      levelCount = levelCount + 1;
-     level.innerText = "Level:" + levelCount;
+     level.innerText = "Level: " + levelCount;
      plus.disabled = false;
      plus.innerText = "Sun!"
      plus2.disabled = false;
      plus2.innerText = "Water!";
      plus3.disabled = false;
      plus3.innerText = "Love";
-     willLeft = 20;
+     willLeft = 45;
+     document.getElementById('plantName1').innerText = ranks[levelCount-1] + userName.plantName;
+     console.log(levelCount);
 }
 //////* END BUTTON FUNCTION VARIABLES && MECHANICS END *//////
 
+//////* Level Up FUNCTION*//////
+
+// function levelUp(){
+//     if(levelCount = 1) {
+//         document.getElementById('plantName1').innerText = levelOne + userName.plantName;
+//             } else if(levelCount = 2) {
+//                 document.getElementById('plantName1').innerText = levelTwo + userName.plantName;
+//             }
+// }
+// levelUp();
+//////* LEVEL UP FUNCTION END*//////
 
 //////* DISABLE BUTTON && INITIALIZE COOLDOWN*//////
 function coolDown() {
     plus.disabled = true;
     plus.innerText = "On Cooldown";
-    setTimeout( ()=>{
+    setTimeout( () => {
         plus.disabled = false;
         plus.innerText = "Sun!";
         count1 = 0;
         counter1.innerText = count1 + " / 15";
-        }, 10000);
+    } ,10000);
 }
-
 function coolDown2() {
     plus2.disabled = true;
     plus2.innerText = "On Cooldown";
-    setTimeout( ()=>{
+    setTimeout( () => {
         plus2.disabled = false;
         plus2.innerText = "Water!"; 
         count2 = 0;
         counter2.innerText = count2 + " / 10";
-        }, 15000);
+    } ,15000);
 }
-
 function coolDown3() {
     plus3.disabled = true;
     plus3.innerText = "On Cooldown";
-    setTimeout( ()=>{
+    setTimeout( () => {
       plus3.disabled = false;
       plus3.innerText = "Love!";
       count3 = 0;
       counter3.innerText = count3 + " / 5";
-      }, 20000);
-  }
+    } ,20000);
+}
 //////* END DISABLE BUTTON && INITIALIZE COOLDOWN*//////
   
 
 ///* Will Meter *///
-let willLeft = 15;
+let willLeft = 35;
 function willtoLive() {
     let interval = setInterval(function() {
     document.getElementById('timer').innerHTML = --willLeft + " seconds";
