@@ -14,6 +14,40 @@
   transform: translate(-50%, -50%);
 }
 
+.howToContainer {
+  display: block;
+  position: relative;
+  border-width: .5rem;
+  padding: 1rem;
+  margin: auto;
+  height: 1000px;
+}
+
+.space2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nameYourPlantContainer {
+  display: block;
+  position: relative;
+  border-width: .5rem;
+  padding: 1rem;
+  margin: auto;
+  height: 1000px;
+}
+
+.space3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 body {
   width: auto;
   height: auto;
