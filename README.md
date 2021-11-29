@@ -36,14 +36,19 @@ End Condition:
 
 ## Project Milestones ##
 *Created File Directories*
+
 *Created Event Listeners*
+
 *CSS Animation via KeyFrames*
+
 *CSS Styling via CDN incorporated*
+
 *Ranking/Title System Deployed*
+
 *Will to Live parameters implemented*
 
 ## Technologies ##
 Frontend - HTML, CSS, JS
 
 ## Project Updates, Ownership, and Future Enhancements ##
-This program serves as the initial project for Xavier Camacho, enhancements and updates will be included on an as needed basis. 
+This program serves as the initial project, enhancements and updates will be included on an as needed basis. 
