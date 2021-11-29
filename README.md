@@ -33,7 +33,7 @@ Game Screen #2:
 End Condition: 
 ![image](https://share.balsamiq.com/c/aZYdjLx8oiQVfarNJLBwyp.png)
 
-## Issues Unresolved ##
+## Unresolved Issues and Bugs ##
 Code repeats itself and there are numerous unecessary functions that can be refactored.  Additionally, the buttons will at times bug out and cooldowns will not activate or only activate for a shorter duration of the setTimeout() interval. The game works, but their are opportunities to make the code clean and fast.  
 
 Additionally, there is technically no "win" condition, levels will continue and more titles will be needed as the levels increase. 

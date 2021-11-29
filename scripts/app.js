@@ -95,8 +95,7 @@ function reset() {
 }
 //////* END BUTTON FUNCTION VARIABLES && MECHANICS END *//////
 
-
-//////* DISABLE BUTTON && INITIALIZE COOLDOWN*//////
+//////* START * DISABLE BUTTON && INITIALIZE COOLDOWN*//////
 function coolDown() {
     plus.disabled = true;
     plus.innerText = "On Cooldown";
@@ -127,9 +126,9 @@ function coolDown3() {
       counter3.innerText = count3 + " / 5";
     } ,20000);
 }
-//////* END DISABLE BUTTON && INITIALIZE COOLDOWN*//////
+//////* END * DISABLE BUTTON && INITIALIZE COOLDOWN*//////
   
-///* START * WILL  *///
+///* START * WILL TO LIVE FUNCTION && USER EXPLORATION OF PAGES  *///
 let willLeft = 36;
 function willtoLive() {
     let interval = setInterval(function() {
@@ -158,4 +157,4 @@ function willtoLive() {
     }, 1000);
 }
 willtoLive();
-///* Will Meter END *///
+///* END * WILL TO LIVE FUNCTION && USER EXPLORATION OF PAGES  *///
