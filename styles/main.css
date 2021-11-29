@@ -100,17 +100,12 @@ form {
 }
 
 #plantName1 {
-  /* animation: color-change 1s infinite; */
-}
-
-.img {
-  display: flex;
-  justify-content: center;
+  animation: color-change 1s infinite;
 }
 
 .flowerPosition  {
-  width: calc(29.2px * var(--pixel-size));
-  height: calc(54px * var(--pixel-size));
+  width: calc(29.1px * var(--pixel-size));
+  height: calc(38px * var(--pixel-size));
   overflow: hidden;
   position: relative;
   margin: auto;

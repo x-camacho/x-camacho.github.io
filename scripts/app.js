@@ -1,4 +1,4 @@
-//////* LEVEL UP RANKING SYSTEM */////
+//////* START * LEVEL UP RANKING ARRAY */////
 let ranks = [
     levelOne = " ",
     levelTwo = "Seedling ", 
@@ -13,15 +13,15 @@ let ranks = [
     LevelTwelve = "Super Immortal ",
     LevelThirteen = "Super Duper Immortal "
 ];
-//////*  LEVEL UP RANKING SYSTEM */////
+//////* END LEVEL UP RANKING ARRAY */////
 
-//////* GRAB USER NAME FROM URL, STORE AND PUSH TO GAME PAGE */////
+//////* START * GRAB USER NAME FROM URL, STORE AND PUSH TO GAME PAGE */////
 let userName = [];
 location.search.substr(1).split("&").forEach(function(item) {userName[item.split("=")[0]] = item.split("=")[1]});
 document.getElementById('plantName1').innerText = userName.plantName;
-//////*  END GRAB USER NAME FROM URL, STORE AND PUSH TO GAME PAGE */////
+//////* END * GRAB USER NAME FROM URL, STORE AND PUSH TO GAME PAGE */////
 
-//////* BUTTON FUNCTION VARIABLES && MECHANICS */////
+//////* START * BUTTON FUNCTION VARIABLES && MECHANICS */////
 let level = document.getElementById('level');
 let levelCount = 1;
 let progress = document.getElementById("value");
@@ -129,7 +129,7 @@ function coolDown3() {
 }
 //////* END DISABLE BUTTON && INITIALIZE COOLDOWN*//////
   
-///* Will Meter *///
+///* START * WILL  *///
 let willLeft = 36;
 function willtoLive() {
     let interval = setInterval(function() {
