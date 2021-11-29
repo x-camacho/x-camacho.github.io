@@ -1,7 +1,4 @@
-
-
 //////* LEVEL UP RANKING SYSTEM */////
-
 let ranks = [
     levelOne = " ",
     levelTwo = "Seedling ", 
@@ -12,17 +9,17 @@ let ranks = [
     levelSeven = "Dynamo ",
     levelEight = "Legendary ",
     LevelNine = "God ",
-    LevelTen = "Immortal "
+    LevelEleven = "Immortal ",
+    LevelTwelve = "Super Immortal ",
+    LevelThirteen = "Super Duper Immortal "
 ];
 //////*  LEVEL UP RANKING SYSTEM */////
-
 
 //////* GRAB USER NAME FROM URL, STORE AND PUSH TO GAME PAGE */////
 let userName = [];
 location.search.substr(1).split("&").forEach(function(item) {userName[item.split("=")[0]] = item.split("=")[1]});
 document.getElementById('plantName1').innerText = userName.plantName;
 //////*  END GRAB USER NAME FROM URL, STORE AND PUSH TO GAME PAGE */////
-
 
 //////* BUTTON FUNCTION VARIABLES && MECHANICS */////
 let level = document.getElementById('level');
@@ -38,34 +35,33 @@ let count3 = 0;
 
 document.getElementById("plus").addEventListener("click", function() {
     let newValue = parseInt(progress.getAttribute('data-value')) + 1;
-        count1 += 1;
+    count1 += 1;
         if(count1 >= 15) {
             coolDown();
-        }
-        counter1.innerText = count1 + " / 15";  //increase counter after every button click //
-        afterClick(newValue);
-        },
-)     
+    }
+    counter1.innerText = count1 + " / 15";  //increase counter after every button click //
+    afterClick(newValue);
+})
+     
 document.getElementById("plus2").addEventListener("click", function() {
     let newValue = parseInt(progress.getAttribute('data-value')) + 2;
-        count2 += 1;
+    count2 += 1;
         if(count2 >= 10) {
             coolDown2();
-        }
-        counter2.innerText = count2 + " / 10";
-        afterClick(newValue);
-    },
-)      
+    }
+    counter2.innerText = count2 + " / 10";
+    afterClick(newValue);
+})
+
 document.getElementById("plus3").addEventListener("click", function() {
-    let newValue = parseInt(progress.getAttribute('data-value')) + 50;
+    let newValue = parseInt(progress.getAttribute('data-value')) + 15;
         count3 += 1;
         if(count3 >= 5) {
             coolDown3();
-        }
-        counter3.innerText = count3 + " / 5";
-        afterClick(newValue);
-    },
-)
+    }
+    counter3.innerText = count3 + " / 5";
+    afterClick(newValue);
+})
         
 function afterClick(newValue) {
     progress.style.width = newValue + '%';
@@ -79,38 +75,26 @@ function afterClick(newValue) {
 function reset() {
     progress.style.width = '0%';
     progress.setAttribute('data-value', 0);
-     xpPercent.innerText = '0%';
-     count1 = 0;
-     counter1.innerText = 0 + " / 15";
-     count2 = 0;
-     counter2.innerText = 0 + " / 10";
-     count3 = 0;
-     counter3.innerText = 0 + " / 5";
-     levelCount = levelCount + 1;
-     level.innerText = "Level: " + levelCount;
-     plus.disabled = false;
-     plus.innerText = "Sun!"
-     plus2.disabled = false;
-     plus2.innerText = "Water!";
-     plus3.disabled = false;
-     plus3.innerText = "Love";
-     willLeft = 45;
-     document.getElementById('plantName1').innerText = ranks[levelCount-1] + userName.plantName;
-     console.log(levelCount);
+    xpPercent.innerText = '0%';
+    count1 = 0;
+    counter1.innerText = 0 + " / 15";
+    count2 = 0;
+    counter2.innerText = 0 + " / 10";
+    count3 = 0;
+    counter3.innerText = 0 + " / 5";
+    levelCount = levelCount + 1;
+    level.innerText = "Level: " + levelCount;
+    plus.disabled = false;
+    plus.innerText = "Sun!"
+    plus2.disabled = false;
+    plus2.innerText = "Water!";
+    plus3.disabled = false;
+    plus3.innerText = "Love";
+    willLeft = 36;
+    document.getElementById('plantName1').innerText = ranks[levelCount-1] + userName.plantName;
 }
 //////* END BUTTON FUNCTION VARIABLES && MECHANICS END *//////
 
-//////* Level Up FUNCTION*//////
-
-// function levelUp(){
-//     if(levelCount = 1) {
-//         document.getElementById('plantName1').innerText = levelOne + userName.plantName;
-//             } else if(levelCount = 2) {
-//                 document.getElementById('plantName1').innerText = levelTwo + userName.plantName;
-//             }
-// }
-// levelUp();
-//////* LEVEL UP FUNCTION END*//////
 
 //////* DISABLE BUTTON && INITIALIZE COOLDOWN*//////
 function coolDown() {
@@ -131,7 +115,7 @@ function coolDown2() {
         plus2.innerText = "Water!"; 
         count2 = 0;
         counter2.innerText = count2 + " / 10";
-    } ,15000);
+    } ,10000);
 }
 function coolDown3() {
     plus3.disabled = true;
@@ -145,9 +129,8 @@ function coolDown3() {
 }
 //////* END DISABLE BUTTON && INITIALIZE COOLDOWN*//////
   
-
 ///* Will Meter *///
-let willLeft = 35;
+let willLeft = 36;
 function willtoLive() {
     let interval = setInterval(function() {
     document.getElementById('timer').innerHTML = --willLeft + " seconds";
@@ -174,6 +157,5 @@ function willtoLive() {
         }
     }, 1000);
 }
-
 willtoLive();
 ///* Will Meter END *///

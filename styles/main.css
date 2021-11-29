@@ -1,3 +1,7 @@
+:root {
+  --pixel-size: 6;
+}
+
 .openContainer {
   display: block;
   position: relative;
@@ -64,8 +68,7 @@
 body {
   width: auto;
   height: auto;
-  background-color: rgb(160, 226, 247);
-  image-rendering: pixelated;
+  background-color: rgba(104, 152, 179, 0.925);
 }
 
 h1 {
@@ -100,9 +103,26 @@ form {
   /* animation: color-change 1s infinite; */
 }
 
-.flowerPosition  {
+.img {
   display: flex;
   justify-content: center;
+}
+
+.flowerPosition  {
+  width: calc(29.2px * var(--pixel-size));
+  height: calc(54px * var(--pixel-size));
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.flowerSprites {
+  animation: moveSpritesheet 1s steps(7) infinite;
+  width: calc(210px * var(--pixel-size));
+}
+
+.pixelart {
+  image-rendering: pixelated;
 }
 
 #plantName1 {
@@ -129,30 +149,22 @@ form {
   /* animation: border-color 1s infinite; */
 }
 
-div#value3 {
-  display: block;
-  z-index: 2;
-  height:38px;
-  background-color: rgb(240, 86, 106);
-  border-color: black;
-  left: 0;
-  text-align: center;
-}
-
 div#value2 {
+  position: relative;
   display: inline-block;
-  height:40px;
+  height: 42px;
   background-color: rgb(252, 252, 251);
   margin: 0px 0px 0px 0px;
   text-align: center;
+  border-color: black;
+  border-style: solid;
+  border-radius: 2%;
 }
 
 div#value {
     display: block;
-    z-index: 2;
-    height:38px;
+    height: 31px;
     background-color: rgb(240, 237, 86);
-    left: 0;
     text-align: center;
 }
 
@@ -205,12 +217,21 @@ p {
   100% { color: rgb(255, 0, 0); }
 }
 
+@keyframes moveSpritesheet {
+    from {
+      transform:translate3d(0px,0,0)
+    }
+    to {
+      transform: translate3d(-100%,0,0);
+    }
+}
+
 /* OPTIMIZATION FOR OTHER DEVICES */
 
 /* for laptops */
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
+  and (min-device-width: 1000px) 
+  and (max-device-width: 1200px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
 }
 
