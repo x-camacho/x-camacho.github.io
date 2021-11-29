@@ -19,19 +19,19 @@ If users fail to keep their pet plant happy during the allotted timeframe, their
 
 ## Concept and Wireframes ##
 Welcome Screen:
-https://share.balsamiq.com/c/x8TTDrwN8TV9Vi9GnbhRi3.png
+![image](https://share.balsamiq.com/c/x8TTDrwN8TV9Vi9GnbhRi3.png)
 
 Name Your Plant Screen: 
-https://share.balsamiq.com/c/oRN4cCE9AGGWYC6iBKze87.png
+![image](https://share.balsamiq.com/c/oRN4cCE9AGGWYC6iBKze87.png)
 
 Game Screen #1:
-https://share.balsamiq.com/c/xo114gamAxk7VaMcANdEpx.png
+![image](https://share.balsamiq.com/c/xo114gamAxk7VaMcANdEpx.png)
 
 Game Screen #2:
-https://share.balsamiq.com/c/quakzSRMWHxVM9ShJ1o6SE.png
+![image](https://share.balsamiq.com/c/quakzSRMWHxVM9ShJ1o6SE.png)
 
 End Condition: 
-https://share.balsamiq.com/c/aZYdjLx8oiQVfarNJLBwyp.png
+![image](https://share.balsamiq.com/c/aZYdjLx8oiQVfarNJLBwyp.png)
 
 
 ## Project Milestones ##
