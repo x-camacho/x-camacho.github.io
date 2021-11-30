@@ -158,3 +158,15 @@ function willtoLive() {
 }
 willtoLive();
 ///* END * WILL TO LIVE FUNCTION && USER REPLAY BOXES *///
+
+
+//* START * ISSUES NEEDING RESOLUTION *//
+
+// - endgame vicotry needed //
+// - refactor functions and event listeners //
+// - create arrays where needed to further make code concise //
+// - add in sound //
+// - optimize @media //
+// - ensure bugs for buttons are resolved - possibly through refactoring //
+
+//* END * ISSUES NEEDING RESOLUTION *//
