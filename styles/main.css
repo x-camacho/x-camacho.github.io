@@ -104,7 +104,7 @@ form {
 }
 
 .flowerPosition  {
-  width: calc(29.1px * var(--pixel-size));
+  width: calc(29px * var(--pixel-size));
   height: calc(38px * var(--pixel-size));
   overflow: hidden;
   position: relative;

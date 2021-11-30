@@ -54,7 +54,7 @@ document.getElementById("plus2").addEventListener("click", function() {
 })
 
 document.getElementById("plus3").addEventListener("click", function() {
-    let newValue = parseInt(progress.getAttribute('data-value')) + 10;
+    let newValue = parseInt(progress.getAttribute('data-value')) + 15;
         count3 += 1;
         if(count3 >= 5) {
             coolDown3();
