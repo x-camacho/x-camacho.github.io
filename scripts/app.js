@@ -89,7 +89,7 @@ function reset() {
     plus2.disabled = false;
     plus2.innerText = "Water!";
     plus3.disabled = false;
-    plus3.innerText = "Love";
+    plus3.innerText = "Love!";
     willLeft = 36;
     document.getElementById('plantName1').innerText = ranks[levelCount-1] + userName.plantName;
 }
@@ -128,7 +128,7 @@ function coolDown3() {
 }
 //////* END * DISABLE BUTTON && INITIALIZE COOLDOWN*//////
   
-///* START * WILL TO LIVE FUNCTION && USER EXPLORATION OF PAGES  *///
+///* START * WILL TO LIVE FUNCTION && USER REPLAY BOXES  *///
 let willLeft = 36;
 function willtoLive() {
     let interval = setInterval(function() {
@@ -157,4 +157,4 @@ function willtoLive() {
     }, 1000);
 }
 willtoLive();
-///* END * WILL TO LIVE FUNCTION && USER EXPLORATION OF PAGES  *///
+///* END * WILL TO LIVE FUNCTION && USER REPLAY BOXES *///
