@@ -2,6 +2,8 @@
 
 # Grow your Plant! #
 
+[Link to the Game!](https://x-camacho.github.io)
+
 ## About this project ##
 The intention of this program is to name and level-up a pet plant using several methods to keep it happy.  Methods include - "Sun", "Water", and "Love".  Failing to keep your plant happy during their "will to live" timeframe can end in the hypothetical death of your pet plant.  The user will be allowed to start the game over again and level-up their pet as many times as they wish.  
 
