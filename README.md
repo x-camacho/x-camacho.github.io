@@ -1,4 +1,6 @@
-# Grow your Plant! # a game.
+# Grow your Plant! # 
+
+a game by Xavier Camacho.
 
 [Link to the Game!](https://x-camacho.github.io)
 
