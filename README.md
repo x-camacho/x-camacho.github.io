@@ -1,6 +1,4 @@
-# Project 1 - Create a Tamagotchi #
-
-# Grow your Plant! #
+# Grow your Plant! # a game.
 
 [Link to the Game!](https://x-camacho.github.io)
 
