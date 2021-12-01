@@ -150,7 +150,7 @@ function willtoLive() {
        a2.appendChild(contentNo);
        document.getElementById('continueNo').appendChild(a2);
        a2.onclick = function () {
-            window.location = "game.html";
+            window.location = "index.html";
         }
        clearInterval(interval);
         }
